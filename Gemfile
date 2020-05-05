@@ -57,6 +57,6 @@ group :test do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "minitest", "~> 5.8", ">= 5.8.4"
 gem "minitest-reporters", "~> 1.1", ">= 1.1.11"
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
