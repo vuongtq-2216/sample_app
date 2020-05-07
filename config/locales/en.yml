@@ -47,6 +47,10 @@ en:
       help: "Help"
       login: "Login"
       name_app: "Sample App"
+  shared:
+    error_messages:
+      one: "The form contains 1 error"
+      other: "The form contains %{count} errors"
   static_pages:
     about:
       about: "About"
@@ -72,7 +76,6 @@ en:
         <a href="%{link_book}"><em>Ruby on Rails Tutorial</em>
         book</a>.
         </p>
-      
     home:
       home: "Home"
       content_html: <h1>Sample App</h1>
@@ -84,3 +87,15 @@ en:
   users:
     new:
       signup: "Sign up"
+      comfirmation: "Confirmation"
+      btn_create_acc: "Create my account"
+    create:
+      welcome: "Welcome to the Sample App!"
+    show:
+      not_found_user: "Not Found User"
+  activerecord:
+    attributes:
+      user:
+        email: "Email"
+        password: "Password"
+        name: "Name"
