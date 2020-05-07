@@ -1,0 +1,4 @@
+enabled_locales: ["en", "vi"]
+max_length_name: 50
+max_length_email: 255
+min_length_pwd: 6
