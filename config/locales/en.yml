@@ -43,7 +43,11 @@ en:
           by <a href="https://www.michaelhartl.com/">Michael Hartl</a>
         </small>
       footer_link_news_html: <a href="https://news.railstutorial.org/">News</a>
-    name_app: "Sample App"
+    header:
+      home: "Home"
+      help: "Help"
+      login: "Login"
+      name_app: "Sample App"
   static_pages:
     about:
       about: "About"
