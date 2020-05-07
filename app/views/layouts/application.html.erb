@@ -11,8 +11,12 @@
   </head>
 
   <body>
-    <%= link_to t ".english", locale: "en" %>
-    <%= link_to t ".vietnamese", locale: "vi" %>
-    <%= yield %>
+    <%= render "layouts/header" %>
+    <%= link_to t(".english"), locale: "en" %>
+    <%= link_to t(".vietnamese"), locale: "vi" %>
+    <div class="container">
+      <%= yield %>
+      <%= render "layouts/footer" %>
+    </div>
   </body>
 </html>
