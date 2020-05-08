@@ -47,6 +47,11 @@ en:
       help: "Help"
       login: "Login"
       name_app: "Sample App"
+      users: "Users"
+      acc: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
   shared:
     error_messages:
       one: "The form contains 1 error"
@@ -91,8 +96,16 @@ en:
       btn_create_acc: "Create my account"
     create:
       welcome: "Welcome to the Sample App!"
+      fail_login: "Invalid email/password combination"
     show:
-      not_found_user: "Not Found User"
+      not_found_user: "Not found user"
+  sessions:
+    new:
+      login: "Log in"
+      email: "Email"
+      password: "Password"
+      new_user: "New user?"
+      signup: "Sign up now"
   activerecord:
     attributes:
       user:
