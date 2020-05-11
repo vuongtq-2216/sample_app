@@ -1,7 +1,8 @@
 class User < ApplicationRecord
-  attr_accessor :remember_token
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i.freeze
   ATTR_PARAMS = %i(name email password password_confirmation).freeze
+  attr_accessor :remember_token
+  self.per_page = Settings.users.per_page
   before_save{email.downcase!}
   validates :name, presence: true, length: {maximum: Settings.max_length_name}
   validates :email, presence: true,
@@ -10,7 +11,7 @@ class User < ApplicationRecord
                     uniqueness: true
   has_secure_password
   validates :password, presence: true,
-            length: {minimum: Settings.min_length_pwd}
+            length: {minimum: Settings.min_length_pwd}, allow_nil: true
 
   class << self
     def digest string

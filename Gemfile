@@ -5,7 +5,9 @@ ruby "2.7.1"
 gem "bcrypt"
 gem "bootsnap", ">= 1.4.2", require: false
 gem "bootstrap-sass", "3.4.1"
+gem "bootstrap-will_paginate", "1.0.0"
 gem "config"
+gem "faker"
 gem "jbuilder", "~> 2.7"
 gem "minitest", "~> 5.8", ">= 5.8.4"
 gem "minitest-reporters", "~> 1.1", ">= 1.1.11"
@@ -18,6 +20,7 @@ gem "sass-rails", ">= 6"
 gem "turbolinks", "~> 5"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "webpacker", "~> 4.0"
+gem "will_paginate", "3.1.8"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
