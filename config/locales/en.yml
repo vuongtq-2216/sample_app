@@ -89,6 +89,7 @@ en:
         <a href="%{link}">Ruby on Rails Tutorial</a>
         sample application.
         </p>
+      not_admin: "You are not admin !"
   users:
     new:
       signup: "Sign up"
@@ -99,6 +100,22 @@ en:
       fail_login: "Invalid email/password combination"
     show:
       not_found_user: "Not found user"
+    edit:
+      edit_user: "Edit user"
+      save_changes: "Save changes"
+      content: "Update your profile"
+      change_avatar: "Change"
+      require_login: "Please log in."
+    update:
+      update_success: "Profile updated"
+    index:
+      all_users: "All users"
+    user:
+      sure: "You sure ?"
+      delete: "Delete"
+    destroy:
+      deleted: "User deleted"
+      cannot_deleted: "Cannot delete this user"
   sessions:
     new:
       login: "Log in"
@@ -107,6 +124,8 @@ en:
       new_user: "New user?"
       signup: "Sign up now"
       remember: "Remember me on this computer"
+    create:
+      fail_login: "Invalid email/password combination"
   activerecord:
     attributes:
       user:
