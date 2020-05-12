@@ -7,3 +7,4 @@ users:
     size: 50
   remember: "1"
   per_page: 5
+  expire_time_reset_pass: 2
