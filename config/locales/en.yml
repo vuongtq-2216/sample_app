@@ -98,6 +98,7 @@ en:
     create:
       welcome: "Welcome to the Sample App!"
       fail_login: "Invalid email/password combination"
+      check_mail_active: "Please check your email to activate your account."
     show:
       not_found_user: "Not found user"
     edit:
@@ -126,9 +127,18 @@ en:
       remember: "Remember me on this computer"
     create:
       fail_login: "Invalid email/password combination"
+      not_activated: "Account not activated. Check your email for the activation link."
   activerecord:
     attributes:
       user:
         email: "Email"
         password: "Password"
         name: "Name"
+  user_mailer:
+    account_activation:
+      content: "Hi %{name} Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+      subject_activate: "Account activation"
+      success: "Account activated!"
+      fail: "Invalid activation link"
+
