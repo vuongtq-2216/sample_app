@@ -4,7 +4,11 @@ min_length_pwd: 6
 size_avatar: 80
 users:
   index:
-    size: 50
-  remember: "1"
+    size_avatar_sm: 50
   per_page: 5
   expire_time_reset_pass: 2
+microposts:
+  max_size_content: 140
+  max_size_img: 5
+  resize_img: [500, 500]
+  format_type_img: "%w(image/jpeg image/gif image/png)"
