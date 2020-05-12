@@ -19,9 +19,7 @@ class UsersController < ApplicationController
   def create
     @user = User.new user_params
     if @user.save
-      log_in @user
-      flash[:success] = t ".welcome"
-      redirect_to @user
+      send_mail_activate @user
     else
       render :new
     end
@@ -75,6 +73,12 @@ class UsersController < ApplicationController
     return if current_user.is_admin?
 
     flash[:danger] = t ".not_admin"
+    redirect_to root_url
+  end
+
+  def send_mail_activate user
+    UserMailer.account_activation(user).deliver_now
+    flash[:info] = t ".check_mail_active"
     redirect_to root_url
   end
 end
