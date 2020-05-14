@@ -7,6 +7,7 @@ users:
     size_avatar_sm: 50
   per_page: 5
   expire_time_reset_pass: 2
+  size_avatar_follow: 30
 microposts:
   max_size_content: 140
   max_size_img: 5

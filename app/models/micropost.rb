@@ -2,6 +2,7 @@ class Micropost < ApplicationRecord
   belongs_to :user
   has_one_attached :image
   default_scope ->{order created_at: :desc}
+  scope :by_authors, ->(ids){where user_id: ids}
   validates :content, presence: true, length: {maximum: Settings.microposts.max_size_content}
   validates :image, content_type: {in: Settings.microposts.format_type_img,
                       message: I18n.t(".img_format_invalid")},

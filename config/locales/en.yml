@@ -56,6 +56,9 @@ en:
     error_messages:
       one: "The form contains 1 error"
       other: "The form contains %{count} errors"
+    stats:
+      followers: "followers"
+      following: "following"
   static_pages:
     about:
       about: "About"
@@ -119,6 +122,12 @@ en:
     destroy:
       deleted: "User deleted"
       cannot_deleted: "Cannot delete this user"
+    follow:
+      follow_btn: "Follow"
+    unfollow:
+      unfollow_btn: "Unfollow"
+    show_follow:
+      micropost: "Micropost: "
   sessions:
     new:
       login: "Log in"
