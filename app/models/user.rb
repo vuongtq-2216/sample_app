@@ -3,6 +3,7 @@ class User < ApplicationRecord
   ATTR_PARAMS = %i(name email password password_confirmation).freeze
   attr_accessor :remember_token, :activation_token, :reset_token
   self.per_page = Settings.users.per_page
+  has_many :microposts, dependent: :destroy
   before_save{email.downcase!}
   before_create :create_activation_digest
   validates :name, presence: true, length: {maximum: Settings.max_length_name}
